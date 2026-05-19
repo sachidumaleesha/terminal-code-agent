@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# lock files
+.lock*
+
+# production
+/build
+
+# dotenv files
+.env*
+
+# vercel
+.vercel
