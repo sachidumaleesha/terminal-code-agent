@@ -1,0 +1,26 @@
+import { createRoot } from "@opentui/react";
+import { createCliRenderer } from "@opentui/core";
+
+import { Header } from "./components/header";
+import { InputBar } from "./components/input-bar";
+
+function App() {
+  return (
+    <box
+      alignItems="center"
+      justifyContent="center"
+      backgroundColor="black"
+      width="100%"
+      height="100%"
+      gap={2}
+    >
+      <Header />
+      <box width="100%" maxWidth={78} paddingX={2}>
+        <InputBar onSubmit={() => {}} />
+      </box>
+    </box>
+  );
+}
+
+const renderer = await createCliRenderer();
+createRoot(renderer).render(<App />);
